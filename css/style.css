@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex: 0 auto;
+}
+
+.col-lg-6 {
+    flex-basis: 50%;
+    padding: 0 8px;
+}
+
+.col-lg-4 {
+    flex-basis: 33.3%;
+    padding: 0 8px;
+}
+
+.container {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: "Inknut Antiqua";
+    font-size: 80px;
+    line-height: 1;
+    font-weight: 600;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Inknut Antiqua";
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+h3 {
+    font-family: "Inter";
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+h4 {
+    font-family: "Inter";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 10px 0;
+}
+
+h5 {
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0;
+}
+
+p {
+    font-family: "Inter";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.review-title {
+    margin: 0;
+}
+
+.review.description {
+    margin: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-unit {
+    align-items: center;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #941B0C;
+    padding: 8px 28px;
+    max-height: 71px;
+    z-index: 999999;
+
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #FBFEF9;
+}
+
+/* footer */
+.footer {
+    background-color: #941B0C;
+    padding: 8px 28px;
+}
+
+.footer-text {
+    color: #FBFEF9;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hero section */
+.hero-image {
+    display: flex;
+    align-items: center;
+    background-image: url('../images/hero-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 583px;
+}
+
+.hero-text {
+    flex-basis: 100%;
+    max-width: 1112px;
+    margin: 0 auto;
+    color: #FBFEF9;
+    padding-left: 35px;
+}
+
+.review-card {
+    position: relative;
+}
+
+.review-text {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #FBFEF999;
+    padding: 8px 22px;
+    text-align: center;
+}
+
+/* button stuff */
+.btn {
+    display: inline-block;
+    padding: 13px 100px;
+    color: #FBFEF9;
+    background-color: #0C6291;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.position-sticky {
+    position: sticky;
+    top: 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.h-menu {
+    display: none;
+}
+
+.inabind-menu {
+    display: block;
+}
+
+@media (max-width: 400px) {
+    .nav {
+        display: none;
+    }
+
+    .col-sm-12 {
+        flex-basis: 100%;
+    }
+
+    .section-image {
+        padding: 48px 16px;
+    }
+
+    .h-menu {
+        display: inline-block;
+        outline: none;
+    }
+
+    .h-menu-padding {
+        padding: 8px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .media-bottom-padding {
+        margin-bottom: 20px;
+    }
+
+    .media-img-padding {
+        margin-bottom: 35px;
+    }
+
+    .mda-left-align {
+        text-align: left;
+    }
+
+    .inabind-menu {
+        display: none;
+    }
+}
+
+/* side nav and interactivity */
+.btn {
+    background-color: #0C6291;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Inter";
+    border: 0;
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 0 !important;
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100vh;
+    background-color: #941B0C;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 99999999999;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #FBFEF9;
+    font-size: 25px;
+    font-family: "Inter";
+    padding: 16px;
+    display: block;
+    transition: .6s;
+}
+
+.side-menu a:hover {
+    background-color: #0C6291;
+    font-family: "Inknut Antiqua";
+    font-size: 27px;
+}
+
+.menu-links {
+    transition: 10s;
+}
+
+.popup {
+    position: absolute;
+    padding: 8px 14px;
+    background-color: #941B0C;
+    color: #FBFEF9;
+    border-radius: 10px;
+    font-family: "Inter";
+    font-size: 14px;
+    opacity: 0;
+    transition: 500ms;
+}
+
+.popup.show {
+    opacity: 1;
+}

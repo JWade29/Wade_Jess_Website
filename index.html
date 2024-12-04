@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In A Bind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <aside id="side-menu" class="side-menu">
+        <button class="close-menu material-symbols-outlined" onclick="closeNav()">close</button>
+        <div id="menu-links">
+            <a href="#">fiction</a>
+            <a href="#">non-fiction</a>
+            <a href="#">school</a>
+            <a href="#">other</a>
+            <a href="#">about</a>
+        </div>
+    </aside>
+    <!--NAV MENU-->
+    <header class="flex-container header position-sticky">
+        <img src="images/logo-just-book.png" width="94">
+        <nav class="flex-container nav">
+
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav-link">Fiction</a></p>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav-link">Non-Fiction</a></p>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav-link">School</a></p>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav-link">Other</a></p>
+            <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="nav-link">About</a></p>
+        </nav>
+
+        <div class="h-menu">
+            <button class=" btn h-menu-padding material-symbols-outlined" onclick="openNav()"> menu </button>
+        </div>
+
+    </header>
+
+    <!--HERO-->
+    <section class="hero-image flex-wrap">
+        <div class="hero-text">
+            <h1>in a bind</h1>
+            <h5>Bookstore and Lounge</h5>
+        </div>
+    </section>
+
+    <br><br>
+
+    <!--BOOK OF THE MONTH-->
+    <section class="container">
+        <div class="flex-container flex-wrap" onclick="openPopup()">
+            <div class="col-lg-6 col-sm-12">
+                <div>
+                    <span id="Popup" class="popup">Awarded the Pulitzer Prize for Fiction</span>
+                </div>
+                <img src="images/book-of-the-month-resized.jpg" width="482" height="305"
+                    alt="Image of the book of the month, The Color Purple">
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h2>book of the month</h2>
+                <h3>The Color Purple</h3>
+                <p>An awarded literary classic, The Color Purple explores the life of Celie and her life as a young
+                    Black American woman in the early 1900s. </p>
+                <a href="https://form.jotform.com/243194355801052" class="btn">Read Now</a>
+            </div>
+        </div>
+
+    </section>
+    <br><br>
+    <!--BEST SELLERS-->
+    <section class="container">
+        <h2>best sellers</h2>
+        <div class="flex-container flex-wrap">
+            <div class="col-lg-4 col-sm-12 bg-blue">
+                <article class="media-img-padding position-relative" onclick="openPopup2()">
+                    <div>
+                        <span id="Popup2" class="popup">Awarded the Sanderson Prize</span>
+                    </div>
+                    <img src="images/king-of-ways.jpg" width="316" alt="Image of the book Kings of Way">
+                    <h3 class="center-text">Kings of Way</h3>
+                    <p class="center-text mda-left-align">Locked in a cage, Kalnin knows the end is near. But the sudden
+                        appearance of a friend gives him hope again...</p>
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-12 bg-red">
+                <article class="media-img-padding" onclick="openPopup3()">
+                    <div>
+                        <span id="Popup3" class="popup">Awarded the Stormlight Prize</span>
+                    </div>
+                    <img src="images/those-born-of-mists.jpg" width="316" alt="Image of the book Those Born of Mists">
+                    <h3 class="center-text">Those Born of Mists</h3>
+                    <p class="center-text mda-left-align">Cinders drifted from the sky. Ven, the street urchin, knew the
+                        world was in peril, but how could she save it? ...</p>
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <article class="media-img-padding" onclick="openPopup4()">
+                    <div>
+                        <span id="Popup4" class="popup">Awarded the Great Value Prize</span>
+                    </div>
+                    <img src="images/wally-mart.jpg" width="316" alt="Image of the book Wally-Mart">
+                    <h3 class="center-text">Wally-Mart</h3>
+                    <p class="center-text mda-left-align">When a trip to the grocery mart goes wrong, Wally must go to
+                        great lengths to bring back what matters most ...</p>
+                </article>
+            </div>
+        </div>
+
+        <br><br>
+    </section>
+
+    <!--BOOK CLUBS-->
+    <section class="container">
+        <div class="flex-container flex-wrap">
+            <div class="col-lg-6 col-sm-12">
+                <h2>book clubs</h2>
+                <p>Our book clubs offer the opportunity to grow together as a community. Make new friends! Find
+                    like-minded people!
+                <p>We read and discuss new books monthly. We host book clubs for every age range, with age-appropriate
+                    literature selections for each.</p>
+                </p>
+                <div class="media-bottom-padding">
+                    <a href="https://form.jotform.com/243194355801052" class="btn">Sign Up</a>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <img src="images/book-club-resized.jpg" width="482" alt="Image of a girl reading a book">
+            </div>
+
+        </div>
+
+    </section>
+    <br><br>
+    <!--REVIEWS-->
+    <section class="container">
+        <h2>reviews</h2>
+        <div class="flex-container flex-wrap">
+            <div class="col-lg-4 col-sm-12">
+                <article class="review-card center-text media-img-padding">
+                    <img src="images/star-reviews-01.png" width="236" alt="5 star rating">
+                    <img src="images/janet-nall.jpg" width="400" alt="Image of Janet Nall">
+                    <div class="review-text">
+                        <h4 class="review-title center-text">Janet Nall</h4>
+                        <p class="review-description center-text">“A truly phenomenal experience! I felt right at home
+                            as soon as I stepped in the door. The staff is so friendly and helpful. I left with the book
+                            I’d intended to buy as well as five others!”</p>
+                    </div>
+
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <article class="review-card center-text media-img-padding">
+                    <img src="images/star-reviews-01.png" width="236" alt="5 star rating">
+                    <img src="images/brandon-s-anderson.jpg" width="400" alt="Image of Brandon S. Anderson">
+                    <div class="review-text">
+                        <h4 class="review-title center-text">Brandon S. Anderson</h4>
+                        <p class="review-description center-text"> “I felt pretty lonely when I moved from Salt Lake
+                            City to Phoenix. I didn’t know anybody. I stumbled across In A Bind one day and joined a
+                            book club. I’ve met and made so many friends here!” </p>
+                    </div>
+
+                </article>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <article class="review-card center-text media-img-padding">
+                    <img src="images/star-reviews-01.png" width="236" alt="5 star rating">
+                    <img src="images/brooke-wilson.jpg" width="400" alt="Image of Brooke Wilson">
+                    <div class="review-text">
+                        <h4 class="review-title center-text">Brooke Wilson</h4>
+                        <p class="review-description center-text">"Books? Yes please! People in my high school would
+                            always make fun of me for reading so often. At In A Bind, being called a “bookworm” is truly
+                            a badge of high honor!”</p>
+                    </div>
+
+                </article>
+            </div>
+
+        </div>
+
+    </section>
+    <br><br>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container">
+            <div class="flex-container center-unit footer-text">
+                <div>
+                    <h4>HOURS</h4>
+                    <div class="mobile-hide">
+                        <p>
+                            Mon-Saturday: 10am-10pm
+                        </p>
+                        <p>
+                            Sun: Closed
+                        </p>
+                        <p>
+                            Special hours for holidays
+                        </p>
+                    </div>
+
+                </div>
+                <div>
+                    <img src="images/logo-and-name.png" width="148">
+                </div>
+                <div>
+                    <h4>CONTACT</h4>
+                    <div class="mobile-hide">
+                        <p>
+                            1(602) 111-1111
+                        </p>
+                        <p>
+                            connect@inabind.com
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <script>
+        function closeNav() {
+            document.getElementById("side-menu").style.width = "0";
+        }
+        function openNav() {
+            document.getElementById("side-menu").style.width = "250px";
+            document.getElementById("menu-links").style.opacity = "1";
+        }
+        function openPopup() {
+            var popup = document.getElementById("Popup");
+            popup.classList.toggle("show");
+        }
+        function openPopup2() {
+            var popup2 = document.getElementById("Popup2");
+            popup2.classList.toggle("show");
+        }
+        function openPopup3() {
+            var popup3 = document.getElementById("Popup3");
+            popup3.classList.toggle("show");
+        }
+        function openPopup4() {
+            var popup4 = document.getElementById("Popup4");
+            popup4.classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
